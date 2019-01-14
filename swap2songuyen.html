@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2song</title>
+</head>
+<body>
+
+<label id="1">số thứ nhất :</label>
+    <input type="number" id="2" >
+<label id="3">số thứ hai :</label>
+    <input type="number" id="4"  >
+<input type="button" value="swap" onclick="main()"/>
+<div id="5" ></div>
+    <script>
+       function main() {
+           var x = parseInt(document.getElementById("2").value);
+           var y = parseInt(document.getElementById("4").value);
+           var c ;
+           c = x;
+           x = y;
+           y = c;
+           document.getElementById('5').innerHTML = 'x: ' + x + '/'  + 'y: ' + y;
+       }
+       main();
+    </script>
+</body>
+</html>
